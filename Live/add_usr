@@ -1,0 +1,9 @@
+#I include here information on how to add someone to the group to gain
+#instant access to the Live directory
+
+#sudo usermod -aG live_group name
+#to confirm - groups name
+#to give the new user access to the Live directory - sudo chmod 770 Live
+#to allow read, write and execute permissons - sudo setfacl -m g:live_group:rwx Live
+#to remove a user - sudo gpasswd -d username live_group
+
